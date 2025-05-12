@@ -103,6 +103,7 @@
 @media (max-width: 768px) {
   .header{
     display: block;
+    text-align: center;
   }
   .header svg{
     width: 90px;
