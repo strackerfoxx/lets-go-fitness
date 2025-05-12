@@ -59,15 +59,14 @@ nav a:hover{
 }
 
 .cover h1{
-    /* font-size: 60px; */
+    font-size: 60px;
     /* margin-bottom: 0; */
     color: rgb(255, 255, 255);
 }
-
-@media (min-width: 950px) {
+@media (max-width: 768px) {
     .cover h1{
-        font-size: 80px;
-        width: 800px;
+        font-size: 40px;
+        margin: 0 0;
     }
 }
 @media (min-width: 768px) {
@@ -83,7 +82,7 @@ nav a:hover{
         display: block;
     }
     .cover h1{
-        /* font-size: 60px; */
+        font-size: 60px;
         margin-bottom: 0;
     }
     .cover .content p{
@@ -105,5 +104,11 @@ nav a:hover{
     }
     .button{
         width: 300px;
+    }
+}
+@media (min-width: 950px) {
+    .cover h1{
+        font-size: 80px;
+        width: 800px;
     }
 }
