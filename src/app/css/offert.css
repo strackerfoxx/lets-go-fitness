@@ -9,6 +9,8 @@
     font-size: 55px;
     margin-top: 4rem;
     margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 #offer-card{
     padding: 30px;
@@ -16,8 +18,7 @@
     backdrop-filter: blur(10px);
     border-radius: 1rem;
     margin-top: 2rem;
-
-    width: 200px;
+    width: 100%;
 }
 #offer-card h3{
     font-size: 2rem;
@@ -31,10 +32,13 @@
 #offer-card a{
     padding: 12px;
     background-color: #fff;
-    border-radius: 1rem;
+    border-radius: 3rem;
     color: #313131;
     text-align: center;
     display: flex;
+    font-weight: bold;
+    align-items: center;
+    gap: 10px;
 }
 #offer-card svg{
     width: 20px;

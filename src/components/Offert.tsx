@@ -56,9 +56,11 @@ export default function Offert() {
                 <h3 className={anton.className}>OFRECEMOS</h3>
                 <p>Entrena un día completo. Sin compromisos, sin inscripción.</p>
                 <Link href="#membership">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                    </svg>
+                    <div className="button-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" style={{margin: "5px"}}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                        </svg>
+                    </div>
                     <span>Descubrir planes</span>
                 </Link>
             </div>

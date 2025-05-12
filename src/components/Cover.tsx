@@ -9,20 +9,18 @@ const anton = Anton({
 
 export default function Cover() {
   return (
-    <>
+    <section id="home" style={{marginTop: "0px"}}>
       <div className="cover">
         <div className="navigation">
+            <Image src={"https://i.imgur.com/dKihrXS.png"}  alt="logo" width={130} height={70} id="logo"/>
+
             <nav>
-                <Link href="#about"><span>About</span></Link>
-                <Link href="#membership"><span>Membership</span></Link>
-                <Link href="#location"><span>Location</span></Link>
+                <Link href="#about"><span>Instalaciones</span></Link>
+                <Link href="#membership"><span>Membresia</span></Link>
+                <Link href="#location"><span>Ubicacion</span></Link>
             </nav>
 
-            <Image src={"https://i.imgur.com/dKihrXS.png"}  alt="logo" width={130} height={70}/>
-            
-            {/* <div>
-              <button>552424</button>
-            </div> */}
+            <Image src={"https://i.imgur.com/dKihrXS.png"}  alt="logo" width={130} height={70} id="logo-two"/>
         </div>
         <h1 className={anton.className}>ENTRENA DURO. TRANSFORMA TU CUERPO.</h1>
         <div className="content">
@@ -33,6 +31,6 @@ export default function Cover() {
             <p id="address">192 Calz. del Hueso Ciudad de México</p>
         </div>
       </div>
-    </>
+    </section>
   )
 }

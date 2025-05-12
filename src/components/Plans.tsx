@@ -47,7 +47,7 @@ export default function Plans(){
             </svg>
         </div>
         <h2 className={`${anton.className} plans-title`}>
-            FLEXIBLE MEMBERSHIP PLANS<br />TO SUIT YOUR LIFESTYLE
+            PLANES FLEXIBLES <br />QUE SE ADAPTAN A TI
         </h2>
       </div>
 

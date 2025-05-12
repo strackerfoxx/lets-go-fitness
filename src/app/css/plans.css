@@ -100,6 +100,15 @@
 .header svg{
     width: 110px;
 }
+@media (max-width: 768px) {
+  .header{
+    display: block;
+  }
+  .header svg{
+    width: 90px;
+  }
+  
+}
 
 .plans-title {
   font-size: 50px;

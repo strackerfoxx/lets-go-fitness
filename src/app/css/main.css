@@ -8,3 +8,11 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+.button-box{
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

@@ -3,6 +3,7 @@ import Cover from "@/components/Cover"
 import Offert from "@/components/Offert"
 import Plans from "@/components/Plans"
 import Location from "@/components/Location"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Offert/>
       <Plans/>
       <Location/>
-
+      <Footer/>
     </div>
   )
 }
