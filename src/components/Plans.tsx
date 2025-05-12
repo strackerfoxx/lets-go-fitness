@@ -1,6 +1,3 @@
-"use client"
-import { useEffect } from "react";
-
 import "@/app/css/plans.css";
 
 import { Anton } from "next/font/google"
