@@ -1,0 +1,63 @@
+
+.svgs{
+    display: flex;
+}
+.svgs svg{
+    width: 100px;
+}
+#about h2{
+    font-size: 55px;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+#offer-card{
+    padding: 30px;
+    background-color: #2525253e;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    margin-top: 2rem;
+
+    width: 200px;
+}
+#offer-card h3{
+    font-size: 2rem;
+    margin: 0 0;
+}
+#offer-card p{
+    color: rgb(150, 150, 150);
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+#offer-card a{
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 1rem;
+    color: #313131;
+    text-align: center;
+    display: flex;
+}
+#offer-card svg{
+    width: 20px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+
+@media (min-width: 768px) {
+    #about{
+        display: grid;
+        grid-template-columns: 40% 57%;
+        gap: 3rem;
+        align-items: center;
+    }
+    .svgs svg{
+        width: 100px;
+    }
+    #about h2{
+        margin-left: 2rem;
+    }
+
+    #offer-card{
+        width: 250px;
+    }
+}
