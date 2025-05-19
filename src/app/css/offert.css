@@ -46,6 +46,23 @@
     color: var(--primary-color);
 }
 
+@media (max-width: 768px) {
+    #about{
+        text-align: center;
+    }
+    .svgs{
+        display: flex;
+        justify-content: center;
+    }
+    #offer-card{
+        padding: 30px;
+        background-color: #2525253e;
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        margin: 10px auto;
+        width: 90%;
+    }
+}
 
 @media (min-width: 768px) {
     #about{

@@ -12,7 +12,8 @@ export default function Cover() {
     <section id="home" style={{marginTop: "0px"}}>
       <div className="cover">
         <div className="navigation">
-            <Image src={"https://i.imgur.com/dKihrXS.png"}  alt="logo" width={130} height={70} id="logo"/>
+            <Image src={"/images/dKihrXS_d.webp"}  alt="logo del gimnasio lets go fitness gym" width={130} height={70} id="logo-mobile"/>
+            {/* <Image src={"https://i.imgur.com/dKihrXS.png"}  alt="logo" width={130} height={70} id="logo"/> */}
 
             <nav>
                 <Link href="#about"><span>Instalaciones</span></Link>
@@ -20,15 +21,18 @@ export default function Cover() {
                 <Link href="#location"><span>Ubicacion</span></Link>
             </nav>
 
-            <Image src={"https://i.imgur.com/dKihrXS.png"}  alt="logo" width={130} height={70} id="logo-two"/>
+            <Image src={"/images/dKihrXS_d.webp"}  alt="logo del gimnasio lets go fitness gym" width={130} height={70} id="logo-two"/>
+            {/* <Image src={"https://i.imgur.com/dKihrXS.png"}  alt="logo" width={130} height={70} id="logo-two"/> */}
         </div>
         <h1 className={anton.className}>ENTRENA DURO. TRANSFORMA TU CUERPO.</h1>
         <div className="content">
-            <p>Gimnasio completo frente a Prepa 5. Área de pesas, spinning, boxeo, vestidores y duchas. Precio accesible. Descuento para estudiantes.</p>
+            <div id="description-container">
+              <p>Gimnasio completo frente a Prepa 5. Área de pesas, cardio, boxeo, vestidores y duchas. Precio accesible. Descuento para estudiantes.</p>
+            </div>
             <Link href="#about" className="button">Empieza tu transformación</Link>
         </div>
         <div>
-            <p id="address">192 Calz. del Hueso Ciudad de México</p>
+            <p id="address">160 Calz. del Hueso Ciudad de México</p>
         </div>
       </div>
     </section>

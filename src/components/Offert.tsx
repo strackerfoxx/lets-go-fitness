@@ -1,6 +1,3 @@
-"use client"
-import { useEffect } from "react"
-
 import Link from "next/link"
 import { Anton } from "next/font/google"
 import "@/app/css/offert.css"
@@ -13,39 +10,17 @@ const anton = Anton({
 })
 
 export default function Offert() {
-
-    useEffect(() => {
-        const elements = document.querySelectorAll('.slide-image, .fade-in-on-scroll');
-
-        const observer = new IntersectionObserver(
-            (entries, obs) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-                obs.unobserve(entry.target); // Solo una vez
-                }
-            });
-            },
-            { threshold: 0.1 }
-        );
-
-        elements.forEach(el => observer.observe(el));
-
-        return () => observer.disconnect();
-    }, []);
-
-
   return (
     <section id="about">
         <div>
             <div className="svgs">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="var(--primary-color)">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="var(--primary-color)">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
                 </svg>
             </div>

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="logo">
             <Image src={"https://i.imgur.com/boyzK1n.png"}  alt="logo" width={130} height={70}/>
           </div>
-          <p>Calzada del Huezo 192<br />CDMX, Coyoacan</p>
+          <p>Calzada del Hueso 160<br />CDMX, Coyoacan</p>
         </div>
 
         <div className="footer-section">
@@ -27,7 +27,7 @@ export default function Footer() {
 
         <div className="footer-section">
           <h4>Horarios</h4>
-          <p>Todos los dias: 7:00 – 21:00<br />Sabado – Domingo: 9:00 – 14:00</p>
+          <p>Todos los dias: 5:00 – 22:00<br />Sabado: 7:00 – 14:00</p>
           <h5>Visita</h5>
           <p>1800-567-8990</p>
         </div>

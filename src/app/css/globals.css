@@ -1,15 +1,8 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* --background: #2121; */
-    --background: #090909;
-    --foreground: #ededed;
-    --primary-color: #ffc400;
-  }
+  /* --background: #2121; */
+  --background: #090909;
+  --foreground: #ededed;
+  --primary-color: #ffc400;
 }
 
 html {
@@ -35,12 +28,6 @@ a {
 }
 section{
   margin-top: 100px;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 @media (min-width: 768px) {

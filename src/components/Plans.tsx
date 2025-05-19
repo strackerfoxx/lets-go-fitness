@@ -1,6 +1,7 @@
 import "@/app/css/plans.css";
 
 import { Anton } from "next/font/google"
+import Link from "next/link";
 const anton = Anton({
   subsets: ['latin'],
   weight: '400', // Anton solo tiene un peso (400)
@@ -20,7 +21,8 @@ const plans = [
       'Acceso total todo el mes',
       'Zona de Pesas',
       'Baños con Regaderas',
-      'Zona de Spinning'
+      'Zona de Cardio',
+      'Estacionamiento'
     ],
     highlighted: true,
   },
@@ -36,13 +38,13 @@ export default function Plans(){
     <section id="membership" className="plans-container">
       <div className="header">
         <div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="var(--primary-color)">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="var(--primary-color)">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
             </svg>
         </div>
@@ -65,7 +67,7 @@ export default function Plans(){
 
             {plan.highlighted ? (
               <>
-              <button className="order-button">Visitar →</button>
+              <Link href="/#location" className="order-button">Visitar →</Link>
                 <ul className="plan-features">
                   {plan.features.map((feature) => (
                     <li key={feature}>
